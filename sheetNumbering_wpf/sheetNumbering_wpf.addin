@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command sheetNumbering_wpf</Text>
+    <Description>Some description for sheetNumbering_wpf</Description>
+    <Assembly>sheetNumbering_wpf.dll</Assembly>
+    <FullClassName>sheetNumbering_wpf.Command</FullClassName>
+    <ClientId>9fff9b61-00c5-4cff-8d87-014afa1e7cbf</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application sheetNumbering_wpf</Name>
+    <Assembly>sheetNumbering_wpf.dll</Assembly>
+    <FullClassName>sheetNumbering_wpf.App</FullClassName>
+    <ClientId>d8825ea0-ab7a-4558-bca0-9bc2ae691eb9</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="sheetNumbering_wpf.MyFormResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sheetNumbering_wpf"
+             mc:Ignorable="d" Height="500" Width="700">
+    <Grid Margin="10,10,10,10" >
+
+        <Grid.RowDefinitions >
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label>Sheet Renumbering Results</Label>
+        <TextBlock Grid.Row="1" FontSize="48" VerticalAlignment="Center" Margin="20,0,10,0">Sheets that got Changed are:</TextBlock>
+
+        <ListBox x:Name="lbxData" Grid.Row="3" ></ListBox>
+
+        <Button Margin="5,5,5,5" VerticalAlignment="Center" Height="30" Grid.Column="1" FontSize="16" Grid.Row="4" HorizontalAlignment="Center" Width="100" Click="Button_Click_1">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect> Close
+            </Button>
+     </Grid >
+</Window>

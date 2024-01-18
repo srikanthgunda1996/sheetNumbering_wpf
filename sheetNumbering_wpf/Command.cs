@@ -42,7 +42,10 @@ namespace sheetNumbering_wpf
 
             currentForm.ShowDialog();
 
-
+            if (currentForm.OperationCancelled is true)
+            {
+                return Result.Failed;
+            }
 
 
             List<Reference> references = new List<Reference>();
@@ -73,6 +76,11 @@ namespace sheetNumbering_wpf
             };
 
             currentForm2.ShowDialog();
+
+            if(currentForm2.OperationCancelled is true)
+            {
+                return Result.Failed;
+            }
 
             string startnum = currentForm2.getstartnum();
             int count = int.Parse(startnum);

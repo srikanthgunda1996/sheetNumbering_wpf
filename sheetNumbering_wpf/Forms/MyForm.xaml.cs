@@ -26,6 +26,7 @@ namespace sheetNumbering_wpf
 
     public partial class MyForm : Window
     {
+        public bool OperationCancelled { get; private set; } = true;
         public Document myDoc = null;
         public MyForm(Document doc, List<Reference> curref)
         {
@@ -63,16 +64,19 @@ namespace sheetNumbering_wpf
 
         private void Ok_Click(object sender, RoutedEventArgs e)
         {
+            OperationCancelled = false;
             this.DialogResult = true; this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
             this.DialogResult = false; this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            OperationCancelled = false;
             this.Close();
         }
     }
